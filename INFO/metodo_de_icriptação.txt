@@ -1,0 +1,51 @@
+PARA O CÓDIGO TRABALHAR: 
+    [-1::-1]
+
+MAS FORMAS DE INCRIPTAÇÃO:
+    from cryptography.fernet import Fernet
+    import cryptography
+    
+    clave = Fernet.generate_key()
+    f = Fernet(clave)
+    test = "oii".encode()
+    ddd = f.encrypt(test)
+
+#########################################################################
+
+DECRIPTAÇÃO:
+key = "neves106"
+key_num = len(key)
+cifra = "neves106cesarioloketa104"
+
+>>> cifra[::]
+'neves106cesarioloketa104'
+>>> cifra[::1]
+'neves106cesarioloketa104'
+>>> cifra[:1]
+'n'
+>>> cifra[:key_num]
+'neves106'
+>>> 
+
+para DECRIPTAÇÃO:
+
+chave: cifra[:key_num]
+sms_decript: cifra[key_num:]
+
+if (key_num == len(cifra[:key_num])):
+...     print ("ESTA CORRETO")
+... else:
+...     print ("NÃO ESTA CORRETO")
+
+#########################################################################
+
+FORMA DE DECRIPTAÇÃO:
+    from cryptography.fernet import Fernet
+    import cryptography
+
+    clave = Fernet.generate_key()
+    f = Fernet(clave)
+    test = "oii".encode()
+    decrypt = f.decrypt(test)
+
+

@@ -1,0 +1,38 @@
+By: César Neves
+
+COMO A FERRAMENTA VAI FUNCIONAR:
+
+SOBRE ENTRADA DE DADOS:
+
+    INCRIPTAÇÃO:
+
+        user = INPUT degite a informação para incriptação.
+        user = INPUT degite a chave de bloqueio /OSB: sem a chave de bloquei, ninguém pode decriptar os seus dados.
+        PROGRAMA = incriptação dos dados.
+        PROGRAMA = salvar os dados e a chave em um arquivo. /OBS: o nome do arquivo séra o nome incriptado da informação
+
+    DECRIPTAÇÃO: 
+
+        user = INPUT degite a informação incriptada.
+        user = INPUT degite a chave da decriptação /OSB: sem a chave de bloquei, ninguém pode decriptar os seus dados.
+        PROGRAMA = decriptar os dados, usando a chave como meio da descriptaçao. /SEM CHAVE SEM DECRIPTAÇÃO
+        PROGRAMA = criar novo arquivo com dados decriptado.
+
+######################################################################################################################
+
+SOBRE A ENTRADA DE ARQUIVO:
+
+    INCRIPTAÇÃO:
+
+            user = INPUT degite o arquivo para incriptação.
+            user = INPUT degite a chave do arquivo /OSB: sem a chave do arquivo, ninguém pode decriptar os seus dados.
+            PROGRAMA = incriptação dos dados.
+            PROGRAMA = salvar os dados e a chave em um arquivo. /OBS: o nome do arquivo séra o nome incriptado da informação
+
+        DECRIPTAÇÃO: 
+
+            user = INPUT degite o arquivo incriptado.
+            user = INPUT degite a chave do arquivo para decriptação /OSB: sem a chave de bloquei, ninguém pode decriptar os seus dados.
+            PROGRAMA = decriptar os dados, usando a chave como meio da descriptaçao. /SEM CHAVE SEM DECRIPTAÇÃO
+            PROGRAMA = criar novo arquivo com dados decriptado.
+
