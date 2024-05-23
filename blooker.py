@@ -27,9 +27,9 @@ while True:#while True
             designer.__configure__designer()#função __configure_designer
             #imprimindo info
             #print ("")#imprimindo
-            print ("\n [I N C R I P T A Ç Ã O] / [D E C R I P T A Ç Ã O] ?\n")
+            print ("\n [E N C R I P T A Ç Ã O] / [D E C R I P T A Ç Ã O] ?\n")
             #print (" [?] USER INFO.")#imprimindo info
-            print (" [1] INCRIPTAÇÃO.")#imprimindo INCRIPTAÇÃO
+            print (" [1] ENCRIPTAÇÃO.")#imprimindo ENCRIPTAÇÃO
             print (" [2] DECRIPTAÇÃO.")#imprimindo DECRIPTAÇÃO
             #criando inputs de dados
             decript_cript = input("\n [?] : ")#input
@@ -41,15 +41,15 @@ while True:#while True
                 #imporando a função do arquivo designer
                 designer.__configure__designer()#função __configure_designer
                 #imprimindo info
-                print ("\n [I N C R I P T A Ç Ã O]\n")#i n c r i p t a ç ã o
+                print ("\n [E N C R I P T A Ç Ã O]\n")#i n c r i p t a ç ã o
                 #criando inputs
                 sms = str(input(" [!] DEGITE A INFORMAÇÃO: "))#input info sms para incriptação
                 #criando chave para incriptação
-                chave_key = str(input(" [!] DEGITE A KEY PARA INCRIPTAÇÃO: "))#input para a key
+                chave_key = str(input(" [!] DEGITE A KEY PARA ENCRIPTAÇÃO: "))#input para a key
                 #usando if e else
                 if (chave_key == "") or (chave_key == " ") or (sms == "") or (sms == " "):#if
                     #imprimindo erro
-                    print ("\n [x] [I N C R I P T A Ç Ã O]: AVISO! CAMPO VAZIO / ADICIONA DADOS.\n")#imprimindo
+                    print ("\n [x] [E N C R I P T A Ç Ã O]: AVISO! CAMPO VAZIO / ADICIONA DADOS.\n")#imprimindo
                     #quebrando o programa
                     break#quebrando
                 #usando else
@@ -84,7 +84,7 @@ while True:#while True
                 print ("\n [D E C R I P T A Ç Ã O]\n")#d e c r i p t a ç ã o
                 sms2 = str(input(" [!] DEGITE O TEXTO ENCRYPTADO: "))#input info sms para incriptação
                 #criando chave para incriptação
-                chave_key2 = str(input(" [!] DEGITE A KEY DA INCRIPTAÇÃO: "))#input para a key
+                chave_key2 = str(input(" [!] DEGITE A KEY DA ENCRIPTAÇÃO: "))#input para a key
                 #CRIANDO CIFRA
                 #usando if e else
                 if (chave_key2 == "") or (chave_key2 == " ") or (sms2 == "") or (sms2 == " "):#if
@@ -142,7 +142,7 @@ while True:#while True
             designer.__configure__designer__sec()#função __configure_designer
             #imprimindo
             #imprimindo info
-            print ("\n [1] INCRIPTAÇÃO.")#imprimindo INCRIPTAÇÃO
+            print ("\n [1] ENCRIPTAÇÃO.")#imprimindo ENCRIPTAÇÃO
             print (" [2] DECRIPTAÇÃO.\n")#imprimindo DECRIPTAÇÃO
             incript_decript = input("\n [?]: ")
             if (incript_decript == 1) or (incript_decript == "1"):

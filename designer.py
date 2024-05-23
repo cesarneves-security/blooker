@@ -12,7 +12,7 @@ def __configure__designer():
 
     print (" [N] PROGRAMADOR: César neves")
     print (" [F] FERRAMENTA: Blooker")
-    print (" [T] TIPO: Incriptação/Decriptação")
+    print (" [T] TIPO: Encriptação/Decriptação")
     print ("")
 
 def __configure__designer__sec():
