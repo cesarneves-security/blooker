@@ -1,0 +1,9 @@
+ python3 main.py
+ 
+ info:
+     python3 main.py -encript-info --key 12345 --input "eu amo python" --output-info file_para_encript.txt
+     python3 main.py -decript-info --key 12345 --input "eu amo python" --output-info file_para_decript.txt
+ 
+ file:
+     python3 main.py -encript-file --key 12345 --file encript_file.txt --output-file file_para_encript.txt
+     python3 main.py -decript-file --key 12345 --file decript_file.txt --output-file file_para_decript.txt
