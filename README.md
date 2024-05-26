@@ -26,13 +26,14 @@ cd blooker
 ```bash
 pip install -r requirements.txt
 ```
-
-## Uso:
-- Dentro do diretório blooker, rode o comando install.py Para instalação da ferramenta:
-```python3 install.py```
-
-- Rode o comando uninstall.py Para remover da ferramenta
-```python3 uninstall.py```
+4. Instalação da ferramenta:
+```bash
+python3 install.py
+```
+5. Remover a ferramenta:
+```bash
+python3 uninstall.py
+```
 
 ### Encriptar/Desencriptar Dados:
 
