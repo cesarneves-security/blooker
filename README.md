@@ -20,7 +20,7 @@ git clone https://github.com/cesarneves-security/blooker.git
 ```
 2. Navegue até o diretório do projeto:
 ```bash
-cd bloker
+cd blooker
 ```
 3. Instale as dependências:
 ```bash
@@ -28,122 +28,58 @@ pip install -r requirements.txt
 ```
 
 ## Uso:
-- Dentro do diretório blooker, rode o comando:
-```python3 main.py```
+- Dentro do diretório blooker, rode o comando install.py Para instalação da ferramenta:
+```python3 install.py```
+
+- Rode o comando uninstall.py Para remover da ferramenta
+```python3 uninstall.py```
 
 ### Encriptar/Desencriptar Dados:
 
 ==Importante: Mantenha a chave de encriptação em segredo e não a perca.==
 ==Sem a chave correta, não será possível desencriptar os dados ou arquivos.==
 
-##### 🔒 ENCRIPTAÇÃO
 
-1. Escolha a opção `1`.
+##### ENCRIPTAÇÃO E DECRIPTAÇÃO DE INFOR #############################################
+
+##### 🔒 ENCRIPTAÇÃO /INFO
+
+1. Escolha a opção `ENCRIPTAÇÃO`.
 
 ```bash
-[E N C R I P T A Ç Ã O] / [D E C R I P T A Ç Ã O] ?
-
-[1] ENCRIPTAÇÃO.
-[2] DECRIPTAÇÃO.
-
-[?] : 1
+[E N C R I P T A Ç Ã O - INFO]
+  blooker -encript-info --key admin123 --input "A minha senha é cesaradmin164" --output-info senha.txt
  ```
 
-2. Digite os dados que deseja encriptar.
-3. Digite a chave que será usada para desencriptar esses dados.
+##### 🔒 DECRIPTAÇÃO /INFO
 
- ```bash
-[E N C R I P T A Ç Ã O]
+2. Escolha a opção `ENCRIPTAÇÃO`.
 
-[!] DEGITE A INFORMAÇÃO: eu amo python
-[!] DEGITE A KEY PARA ENCRIPTAÇÃO: 12345
-
-[-] ENCRIPTADO: vKJVTKGUhvePPb+yfw==*ZO+NhOxDl+pwuOU7gCEQ5g==*HLbHztUP5cl7X1QlYerGRg==*7lh1wHNsvB7WOhHZAjY6tg==
-[-] KEY: 12345
+```bash
+[D E C R I P T A Ç Ã O - INFO]
+  blooker -decript-info --key admin123 --input "texto_encriptado" --output-info senha.txt
  ```
 
+##### ENCRIPTAÇÃO E DECRIPTAÇÃO DE ARQUIVOS #############################################
 
- ##### 🔑 DECRIPTAÇÃO
+
+##### 🔑 ENCRIPTAÇÃO /FILE
 1. Escolha a opção `2`.
 
 ```bash
-[E N C R I P T A Ç Ã O] / [D E C R I P T A Ç Ã O] ?
-
-[1] ENCRIPTAÇÃO.
-[2] DECRIPTAÇÃO.
-
-[?] : 2
-```
-2. Digite os dados encriptados.
-3. Digite a chave usada para encriptar os dados.
-
-```bash
-[D E C R I P T A Ç Ã O]
-
-[!] DEGITE O TEXTO ENCRYPTADO: vKJVTKGUhvePPb+yfw==*ZO+NhOxDl+pwuOU7gCEQ5g==*HLbHztUP5cl7X1QlYerGRg==*7lh1wHNsvB7WOhHZAjY6tg==
-[!] DEGITE A KEY DA ENCRIPTAÇÃO: 12345
-```
-```bash
-[D E C R I P T A N D O. . .]
-
-[!] DECODIFICADO: eu amo python
-[!] KEY: 12345
+[E N C R I P T A Ç Ã O - FILE]
+  blooker -encript-file --key admin123 --file files.txt --output-file saida_file.txt
 ```
 
-
-### Encriptar/Desencriptar Arquivos:
-##### 🔒 ENCRIPTAÇÃO
-
-1. Escolha a opção `1`.
+##### 🔑 DECRIPTAÇÃO /FILE
+2. Escolha a opção `2`.
 
 ```bash
- [E N C R I P T A Ç Ã O] / [D E C R I P T A Ç Ã O] ?
-
- [1] ENCRIPTAÇÃO.
- [2] DECRIPTAÇÃO.
-
- [?] : 1
- ```
-1. Digite o nome do arquivo que deseja encriptar _(o arquivo deve estar na raiz do programa)_.
-
-2. Digite a chave que será usada para desencriptar os dados do arquivo.
-
-3. Digite um nome para o arquivo encriptado que será gerado.
-
-```bash
- [file] FILE-NAME?: teste.py
- [key] KEY-CHAVE?: 12345
- [file-salve] FILE-SALVE?: encript-teste.py
-
- [F I L E -- E N C R I P T A D O]
+[D E C R I P T A Ç Ã O - FILE]
+  blooker -decript-file --key admin123 --file encript_files.txt --output-file saida_file.txt
 ```
-> O arquivo será salvo dentro da pasta `CRYPTOGRAFADOS`.
-
- ##### 🔑 DECRIPTAÇÃO
-1. Escolha a opção `2`.
-
-```bash
- [E N C R I P T A Ç Ã O] / [D E C R I P T A Ç Ã O] ?
-
- [1] ENCRIPTAÇÃO.
- [2] DECRIPTAÇÃO.
-
- [?] : 2
-
-```
-1. Digite o nome do arquivo que deseja decriptar _(o arquivo deve estar na raiz do programa)_.
-
-2. Digite a chave usada para encriptar os dados do arquivo.
-
-3. Digite um nome para o arquivo decriptado que será gerado.
-```bash
-[file] FILE-NAME-DECRYPT?: encript-teste.py
-[key] KEY-CHAVE?: 12345
-[file-salve] FILE-SALVE?: teste.py
-
-[F I L E -- D E C R I P T A D O]
-```
-> O arquivo será salvo dentro da pasta `DESCRYPTOGRAFADOS`.
+==Importante: Mantenha a chave de encriptação em segredo e não a perca.==
+==Sem a chave correta, não será possível desencriptar os dados ou arquivos.==
 
 ### Contribuição
 Se você encontrar algum problema ou tiver sugestões de melhoria, sinta-se à vontade para abrir uma issue ou enviar um pull request.
